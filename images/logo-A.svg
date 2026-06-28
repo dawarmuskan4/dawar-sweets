@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <g fill="#D4A017"><circle cx="106.00" cy="60.00" r="8"></circle><circle cx="103.23" cy="75.73" r="8"></circle><circle cx="95.24" cy="89.57" r="8"></circle><circle cx="83.00" cy="99.84" r="8"></circle><circle cx="67.99" cy="105.30" r="8"></circle><circle cx="52.01" cy="105.30" r="8"></circle><circle cx="37.00" cy="99.84" r="8"></circle><circle cx="24.76" cy="89.57" r="8"></circle><circle cx="16.77" cy="75.73" r="8"></circle><circle cx="14.00" cy="60.00" r="8"></circle><circle cx="16.77" cy="44.27" r="8"></circle><circle cx="24.76" cy="30.43" r="8"></circle><circle cx="37.00" cy="20.16" r="8"></circle><circle cx="52.01" cy="14.70" r="8"></circle><circle cx="67.99" cy="14.70" r="8"></circle><circle cx="83.00" cy="20.16" r="8"></circle><circle cx="95.24" cy="30.43" r="8"></circle><circle cx="103.23" cy="44.27" r="8"></circle><circle cx="60" cy="60" r="46"></circle></g>
+  <circle cx="60" cy="60" r="44" fill="#FFF8EC"></circle>
+  <circle cx="60" cy="60" r="40" fill="#A31E22"></circle>
+  <circle cx="60" cy="60" r="33" fill="none" stroke="#F2C94C" stroke-width="1" stroke-opacity="0.6"></circle>
+  <text x="60" y="56" text-anchor="middle" dominant-baseline="central" font-family="Georgia,serif" font-weight="700" font-size="30" letter-spacing="0.5" fill="#FFF8EC">DSS</text>
+  <text x="60" y="74" text-anchor="middle" dominant-baseline="central" font-family="Georgia,serif" font-weight="700" font-size="6.5" letter-spacing="1.5" fill="#F2C94C">EST. 1958</text>
+</svg>
