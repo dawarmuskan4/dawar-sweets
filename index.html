@@ -829,11 +829,12 @@ image-slot{ display:block; }
   .trust-section{ padding-bottom:44px; }
 
   /* Story section */
-  .story-section{ padding:56px 20px; border-radius:var(--radius-md); }
+  .story-section{ padding:56px 20px 52px; border-radius:var(--radius-md); }
   .story-closing{ font-size:16px; }
 
-  /* Sweets section rounded corners */
-  .sweets-section{ border-radius:var(--radius-md); }
+  /* Sweets section — explicit padding so dark box doesn't clip tight after last card */
+  .sweets-section{ border-radius:var(--radius-md); padding-bottom:48px; }
+  .sweets-grid{ margin-bottom:0; }
 
   /* Hero tweaks */
   .hero{ padding:110px 18px 80px; min-height:100svh; min-height:100vh; }
