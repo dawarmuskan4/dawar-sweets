@@ -828,12 +828,12 @@ image-slot{ display:block; }
   .ghewar-section{ padding-top:14px; padding-bottom:14px; }
   .trust-section{ padding-bottom:44px; }
 
-  /* Story section */
-  .story-section{ padding:56px 20px 52px; border-radius:var(--radius-md); }
+  /* Story section — side margins like ghewar card */
+  .story-section{ padding:56px 20px 52px; border-radius:var(--radius-md); margin:0 18px; }
   .story-closing{ font-size:16px; }
 
-  /* Sweets section — explicit padding so dark box doesn't clip tight after last card */
-  .sweets-section{ border-radius:var(--radius-md); padding-bottom:48px; }
+  /* Sweets section — side margins + padding so dark box looks like ghewar card */
+  .sweets-section{ border-radius:var(--radius-md); padding-bottom:48px; margin:0 18px; }
   .sweets-grid{ margin-bottom:0; }
 
   /* Hero tweaks */
@@ -857,11 +857,11 @@ image-slot{ display:block; }
   .section-head{ margin-bottom:32px; }
   .section-desc{ font-size:14.5px; }
 
-  /* Pakora cards — 2 per row on mid-small */
-  .pakora-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
-  .pakora-card{ padding:14px; }
-  .pakora-card h3{ font-size:16px; }
-  .pakora-desc{ font-size:12.5px; min-height:unset; }
+  /* Pakora cards — single column on mobile */
+  .pakora-grid{ grid-template-columns:1fr; gap:16px; }
+  .pakora-card{ padding:16px; }
+  .pakora-card h3{ font-size:17px; }
+  .pakora-desc{ font-size:13.5px; min-height:unset; }
 
   /* Ghewar */
   .ghewar-body{ padding:28px 22px; }
@@ -872,6 +872,14 @@ image-slot{ display:block; }
   /* Split sandwich/drinks */
   .split-col{ padding:34px 24px; }
   .feature-info p{ font-size:13.5px; }
+
+  /* Sandwich image — full width like pakora/sweet images */
+  .feature-item{ flex-direction:column; gap:18px; text-align:center; }
+  .feature-item image-slot.feature-img{ width:100%; height:auto; aspect-ratio:4/3; flex-shrink:0; border-radius:var(--radius-sm); }
+  .feature-info p{ max-width:none; }
+
+  /* Boondi image — hide on mobile */
+  .boondi-img{ display:none !important; }
 
   /* Specials */
   .special-card{ padding:30px 24px; }
@@ -907,10 +915,12 @@ image-slot{ display:block; }
 @media (min-width:561px) and (max-width:820px){
   .section{ padding:70px 24px; }
   .split-section{ padding-top:70px; padding-bottom:70px; }
-  .story-section{ padding:70px 32px; }
+  .story-section{ padding:70px 32px; margin:0 24px; }
+  .sweets-section{ margin:0 24px; padding-bottom:48px; }
   .hero{ padding:120px 28px 80px; }
   .pakora-grid{ gap:20px; }
   .ghewar-body{ padding:40px 36px; }
+  .boondi-img{ display:none !important; }
 }
 
 /* Very small screens (iPhone SE etc.) */
