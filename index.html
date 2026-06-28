@@ -371,7 +371,7 @@ ul{ list-style:none; }
 @media (max-width:560px){ .pakora-grid{ grid-template-columns:1fr; } }
 
 .pakora-card{
-  background:var(--white); border-radius:var(--radius-md); padding:0;
+  background:var(--white); border-radius:var(--radius-md); padding:20px;
   text-align:center; box-shadow:var(--shadow-soft);
   transition: transform 0.3s cubic-bezier(.2,.8,.3,1.2), box-shadow 0.3s ease;
   opacity:0; transform:translateY(30px);
@@ -387,7 +387,7 @@ ul{ list-style:none; }
   transform: translateY(-10px) scale(1.035);
   box-shadow: 0 18px 34px -10px rgba(212,160,23,0.45);
 }
-.pakora-img-wrap{ position:relative; margin-bottom:0; }
+.pakora-img-wrap{ position:relative; margin-bottom:16px; }
 .placeholder-img{
   width:100%; aspect-ratio:1/1; border-radius:var(--radius-sm);
   background: linear-gradient(135deg, var(--cream-deep), #F6E2B8);
@@ -408,8 +408,8 @@ ul{ list-style:none; }
 }
 .sizzle-tag.sizzle-spicy{ background:var(--orange); }
 .sizzle-tag.sizzle-seasonal{ background:var(--mint, #1F8A5B); }
-.pakora-card h3{ font-family:var(--font-display); font-size:19px; font-weight:600; margin-bottom:6px; padding:14px 16px 0; }
-.pakora-desc{ font-size:13.5px; color:var(--brown-soft); margin-bottom:0; min-height:unset; padding:0 16px 16px; }
+.pakora-card h3{ font-family:var(--font-display); font-size:19px; font-weight:600; margin-bottom:6px; }
+.pakora-desc{ font-size:13.5px; color:var(--brown-soft); margin-bottom:12px; min-height:36px; }
 .pakora-price{ font-weight:700; color:var(--red); font-size:14px; }
 
 /* ===================== SWEETS MARQUEE ===================== */
@@ -627,7 +627,8 @@ image-slot{ display:block; }
 }
 
 .pakora-img-wrap image-slot{
-  width:100%; aspect-ratio:1/1; height:auto;
+  width:100%; aspect-ratio:1/1; height:auto; border-radius:var(--radius-sm);
+  box-shadow: inset 0 0 0 1px rgba(45,27,14,0.06);
 }
 
 .gallery-grid{
@@ -870,7 +871,7 @@ image-slot{ display:block; }
 
   /* Pakora cards — single column on mobile */
   .pakora-grid{ grid-template-columns:1fr; gap:16px; }
-  .pakora-card{ padding:0; }
+  .pakora-card{ padding:16px; }
   .pakora-card h3{ font-size:17px; }
   .pakora-desc{ font-size:13.5px; min-height:unset; }
 
@@ -1046,7 +1047,7 @@ image-slot{ display:block; }
     <div class="pakora-grid">
       <article class="pakora-card" style="--delay:0">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-bread" src="images/pk-bread.jpg" shape="rect" placeholder="Bread pakora photo"></image-slot>
+          <image-slot id="pk-bread" src="images/pk-bread.jpg" shape="rounded" radius="10" placeholder="Bread pakora photo"></image-slot>
           <span class="sizzle-tag">Bestseller</span>
         </div>
         <h3>Bread Pakora</h3>
@@ -1055,7 +1056,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:1">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-paneer-bread" src="images/pk-paneer-bread.jpg" shape="rect" placeholder="Paneer bread pakora photo"></image-slot>
+          <image-slot id="pk-paneer-bread" src="images/pk-paneer-bread.jpg" shape="rounded" radius="10" placeholder="Paneer bread pakora photo"></image-slot>
         </div>
         <h3>Paneer Bread Pakora</h3>
         <p class="pakora-desc">Bread layered with paneer, dipped in fresh gram flour batter, fried crisp and served hot.</p>
@@ -1063,7 +1064,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:2">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-paneer" src="images/pk-paneer.jpg" shape="rect" placeholder="Paneer pakora photo"></image-slot>
+          <image-slot id="pk-paneer" src="images/pk-paneer.jpg" shape="rounded" radius="10" placeholder="Paneer pakora photo"></image-slot>
         </div>
         <h3>Paneer Pakora</h3>
         <p class="pakora-desc">Soft paneer cubes, spiced batter, crisp coating.</p>
@@ -1071,7 +1072,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:3">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-mix" src="images/pk-mix.jpg" shape="rect" placeholder="Mix pakora photo"></image-slot>
+          <image-slot id="pk-mix" src="images/pk-mix.jpg" shape="rounded" radius="10" placeholder="Mix pakora photo"></image-slot>
           <span class="sizzle-tag">Mix</span>
         </div>
         <h3>Mix Pakora</h3>
@@ -1080,7 +1081,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:4">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-chaap" src="images/pk-chaap.jpg" shape="rect" placeholder="Chaap pakora photo"></image-slot>
+          <image-slot id="pk-chaap" src="images/pk-chaap.jpg" shape="rounded" radius="10" placeholder="Chaap pakora photo"></image-slot>
         </div>
         <h3>Chaap Pakora</h3>
         <p class="pakora-desc">Soya chaap in spiced batter, fried hot and crisp.</p>
@@ -1088,7 +1089,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:5">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-mushroom" src="images/pk-mushroom.jpg" shape="rect" placeholder="Mushroom pakora photo"></image-slot>
+          <image-slot id="pk-mushroom" src="images/pk-mushroom.jpg" shape="rounded" radius="10" placeholder="Mushroom pakora photo"></image-slot>
           <span class="sizzle-tag sizzle-seasonal">Seasonal</span>
         </div>
         <h3>Mushroom Pakora</h3>
@@ -1097,7 +1098,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:6">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-bhish" src="images/pk-bhish.jpg" shape="rect" placeholder="Bhish pakora photo"></image-slot>
+          <image-slot id="pk-bhish" src="images/pk-bhish.jpg" shape="rounded" radius="10" placeholder="Bhish pakora photo"></image-slot>
         </div>
         <h3>Bhish Pakora</h3>
         <p class="pakora-desc">Lotus stem coated in gram flour batter, fried fresh to order.</p>
@@ -1288,10 +1289,10 @@ image-slot{ display:block; }
         <h3><i data-icon="map-pin"></i> Address</h3>
         <p>Shop No 5, Sanoli Rd, opposite Saluja Gas Agency, Chawla Colony, Panipat, Haryana 132103</p>
         <h3><i data-icon="clock"></i> Timings</h3>
-        <p>11:00 AM – 9:00 PM, all days</p>
+        <p>11:00 AM – 10:00 PM, all days</p>
         <h3><i data-icon="phone"></i> Contact</h3>
-        <p><a href="tel:+919996012356" class="loc-link">Tarun Dawar</a><br>
-        <a href="tel:+919896212356" class="loc-link">Anil Dawar</a></p>
+        <p>Tarun Dawar — <a href="tel:+919996012356" class="loc-link">+91 99960 12356</a><br>
+        Anil Dawar — <a href="tel:+919896212356" class="loc-link">+91 98962 12356</a></p>
         <div class="loc-actions">
           <a href="https://www.google.com/maps/dir/?api=1&destination=29.3889062,76.9885336&destination_place_id=PAKORA+JUNCTION" target="_blank" rel="noopener" class="btn btn-primary small">
             <i data-icon="map-pin"></i> Visit Us
