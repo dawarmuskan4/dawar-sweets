@@ -878,8 +878,14 @@ image-slot{ display:block; }
   .feature-item image-slot.feature-img{ width:100%; height:auto; aspect-ratio:4/3; flex-shrink:0; border-radius:var(--radius-sm); }
   .feature-info p{ max-width:none; }
 
-  /* Boondi image — hide on mobile */
-  .boondi-img{ display:none !important; }
+  /* Boondi image — show as inline image below card text on mobile */
+  .boondi-img{
+    position:static; display:block;
+    width:100%; height:auto; aspect-ratio:1/1;
+    border-radius:var(--radius-md);
+    border:none; box-shadow:none;
+    margin-top:20px;
+  }
 
   /* Specials */
   .special-card{ padding:30px 24px; }
@@ -920,7 +926,14 @@ image-slot{ display:block; }
   .hero{ padding:120px 28px 80px; }
   .pakora-grid{ gap:20px; }
   .ghewar-body{ padding:40px 36px; }
-  .boondi-img{ display:none !important; }
+  /* Boondi image — inline on tablet too */
+  .boondi-img{
+    position:static; display:block;
+    width:60%; height:auto; aspect-ratio:1/1;
+    border-radius:var(--radius-md);
+    border:none; box-shadow:none;
+    margin-top:20px;
+  }
 }
 
 /* Very small screens (iPhone SE etc.) */
@@ -1007,7 +1020,7 @@ image-slot{ display:block; }
     </div>
     <div class="gallery-grid">
       <image-slot id="gal-1" src="https://images.unsplash.com/photo-1765360024320-b2ab819c6f75?auto=format&fit=crop&w=1000&q=72" shape="rounded" radius="18" placeholder="Fry station / counter photo"></image-slot>
-      <image-slot id="gal-2" src="https://images.unsplash.com/photo-1695568181363-af5c78f4d059?auto=format&fit=crop&w=1000&q=72" shape="rounded" radius="18" placeholder="Sweets case photo"></image-slot>
+      <image-slot id="gal-2" src="images/sw-kalakand.jpg" shape="rounded" radius="18" placeholder="Sweets case photo"></image-slot>
       <image-slot id="gal-3" src="https://images.unsplash.com/photo-1695568181747-f54dff1d4654?auto=format&fit=crop&w=1000&q=72" shape="rounded" radius="18" placeholder="Plate / shopfront photo"></image-slot>
     </div>
   </section>
