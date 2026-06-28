@@ -70,8 +70,14 @@ body{
   font-family: var(--font-body);
   background: var(--cream);
   color: var(--brown);
-  overflow-x: hidden;
+  overflow-x: clip;
   line-height:1.5;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+}
+
+html{
+  overflow-x: clip;
 }
 
 img{ max-width:100%; display:block; }
@@ -176,7 +182,7 @@ ul{ list-style:none; }
 
 /* ===================== HERO ===================== */
 .hero{
-  position:relative; min-height:100vh; display:flex; flex-direction:column;
+  position:relative; min-height:100vh; min-height:100svh; display:flex; flex-direction:column;
   align-items:center; justify-content:center; text-align:center;
   padding: 130px 24px 70px; overflow:hidden;
   background:
@@ -809,6 +815,109 @@ image-slot{ display:block; }
 .order-clear{ background:none; border:none; cursor:pointer; color:var(--brown-soft); font-size:13px; font-weight:600; margin-top:12px; width:100%; text-align:center; }
 .order-clear:hover{ color:var(--red); }
 .order-note{ font-size:11.5px; color:var(--brown-soft); text-align:center; margin-top:10px; line-height:1.5; }
+
+/* ===================== MOBILE RESPONSIVENESS ===================== */
+@media (max-width:560px){
+
+  /* Section padding */
+  .section{ padding:56px 18px; }
+  .split-section{ padding-top:56px; padding-bottom:56px; gap:18px; }
+  .showcase-section{ padding-top:10px; padding-bottom:48px; }
+  .quality-strip{ padding-top:36px; padding-bottom:36px; }
+  .specials-section{ padding-top:10px; padding-bottom:28px; }
+  .ghewar-section{ padding-top:14px; padding-bottom:14px; }
+  .trust-section{ padding-bottom:44px; }
+
+  /* Story section */
+  .story-section{ padding:56px 20px; border-radius:var(--radius-md); }
+  .story-closing{ font-size:16px; }
+
+  /* Sweets section rounded corners */
+  .sweets-section{ border-radius:var(--radius-md); }
+
+  /* Hero tweaks */
+  .hero{ padding:110px 18px 80px; min-height:100svh; min-height:100vh; }
+  .hero-eyebrow{ font-size:11px; letter-spacing:1.5px; margin-bottom:12px; }
+  .hero-sub{ font-size:15px; margin-top:16px; }
+  .hero-badges{ gap:22px; margin-top:40px; }
+  .badge-num{ font-size:28px; }
+
+  /* Buttons */
+  .btn{ font-size:14px; padding:13px 22px; }
+  .hero-actions{ gap:12px; }
+
+  /* Navbar */
+  .nav-cta{ font-size:13px; padding:9px 14px; }
+  .brand-name{ font-size:16px; }
+  .brand-tagline{ font-size:9.5px; }
+  .brand-mark{ width:36px; height:36px; }
+
+  /* Section heads */
+  .section-head{ margin-bottom:32px; }
+  .section-desc{ font-size:14.5px; }
+
+  /* Pakora cards — 2 per row on mid-small */
+  .pakora-grid{ grid-template-columns:repeat(2,1fr); gap:14px; }
+  .pakora-card{ padding:14px; }
+  .pakora-card h3{ font-size:16px; }
+  .pakora-desc{ font-size:12.5px; min-height:unset; }
+
+  /* Ghewar */
+  .ghewar-body{ padding:28px 22px; }
+  .ghewar-body h2{ font-size:28px; }
+  .ghewar-body > p{ font-size:14.5px; }
+  .ghewar-media{ min-height:240px; }
+
+  /* Split sandwich/drinks */
+  .split-col{ padding:34px 24px; }
+  .feature-info p{ font-size:13.5px; }
+
+  /* Specials */
+  .special-card{ padding:30px 24px; }
+  .special-card h3{ font-size:22px; }
+  .special-card p{ font-size:14.5px; }
+
+  /* Location */
+  .location-card{ padding:28px 22px; }
+  .location-card p{ font-size:14px; }
+  .map-embed{ min-height:240px; }
+  .loc-actions{ flex-wrap:wrap; gap:10px; }
+
+  /* Trust grid */
+  .trust-grid{ padding:32px 18px; }
+  .trust-num, .trust-suffix{ font-size:38px; }
+
+  /* Footer */
+  .footer{ padding:44px 18px 24px; }
+  .footer-brand .brand-name{ font-size:16px; }
+  .footer-tag{ font-size:13px; }
+  .footer-links{ gap:16px; }
+
+  /* Order tray — full width on very small screens */
+  .order-tray{ left:12px; right:12px; width:auto; transform:translateY(140%); border-radius:var(--radius-md); }
+  .order-tray.show{ transform:translateY(0); }
+  .order-panel{ width:100%; border-radius:var(--radius-lg) var(--radius-lg) 0 0; }
+
+  /* Float WhatsApp — slightly smaller */
+  .float-whatsapp{ width:50px; height:50px; font-size:22px; bottom:18px; right:18px; }
+}
+
+/* Between 560px and 820px (tablet-ish) */
+@media (min-width:561px) and (max-width:820px){
+  .section{ padding:70px 24px; }
+  .split-section{ padding-top:70px; padding-bottom:70px; }
+  .story-section{ padding:70px 32px; }
+  .hero{ padding:120px 28px 80px; }
+  .pakora-grid{ gap:20px; }
+  .ghewar-body{ padding:40px 36px; }
+}
+
+/* Very small screens (iPhone SE etc.) */
+@media (max-width:375px){
+  .pakora-grid{ grid-template-columns:1fr; }
+  .btn{ width:100%; justify-content:center; }
+  .hero-actions .btn{ width:auto; }
+}
 
 </style>
 </head>
