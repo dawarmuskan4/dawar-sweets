@@ -3,7 +3,43 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Dawar Sweets &amp; Snacks — Panipat</title>
+<title>Dawar Sweets &amp; Snacks — Pakora Junction, Panipat</title>
+<meta name="description" content="Dawar Sweets &amp; Snacks — Pakora Junction by Dawar, Panipat. Fresh pakoras, pure-ghee mithai, sandwiches and chilled drinks since 1958. Shop No 5, Sanoli Rd, Panipat. Order on Zomato or Magicpin.">
+<link rel="canonical" href="https://dawarsweets.vercel.app/">
+
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="Dawar Sweets &amp; Snacks — Panipat">
+<meta property="og:description" content="Fresh pakoras, pure-ghee sweets, sandwiches and drinks. A Dawar family kitchen since 1958, Panipat.">
+<meta property="og:image" content="https://dawarsweets.vercel.app/images/og-cover.jpg">
+<meta property="og:url" content="https://dawarsweets.vercel.app/">
+<meta name="twitter:card" content="summary_large_image">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "Dawar Sweets & Snacks (Pakora Junction by Dawar)",
+  "image": "https://dawarsweets.vercel.app/images/og-cover.jpg",
+  "telephone": "+919996012356",
+  "servesCuisine": ["Indian", "Snacks", "Sweets"],
+  "priceRange": "₹",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Shop No 5, Sanoli Rd, opposite Saluja Gas Agency, Chawla Colony",
+    "addressLocality": "Panipat",
+    "addressRegion": "Haryana",
+    "postalCode": "132103",
+    "addressCountry": "IN"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 29.3889062, "longitude": 76.9885336 },
+  "openingHours": "Mo-Su 11:00-22:00",
+  "url": "https://dawarsweets.vercel.app/",
+  "sameAs": [
+    "http://zoma.to/r/21901455",
+    "https://magicpin.in/Panipat/New-Hb-Colony/Restaurant/Pakora-Junction/store/2056755/photos"
+  ]
+}
+</script>
 
 <!-- ext resources: image-slot photos (custom-element src is not auto-discovered by the bundler) -->
 <meta name="ext-resource-dependency" content="https://images.unsplash.com/photo-1765360024331-25b63e85272e?auto=format&fit=crop&w=1800&q=78" data-resource-id="hero-bg" />
@@ -63,6 +99,7 @@
 }
 
 *{ margin:0; padding:0; box-sizing:border-box; }
+.sr-only{ position:absolute; width:1px; height:1px; padding:0; margin:-1px; overflow:hidden; clip:rect(0,0,0,0); white-space:nowrap; border:0; }
 
 html{ scroll-behavior:smooth; }
 
@@ -997,7 +1034,7 @@ image-slot{ display:block; }
     <div class="hero-inner">
       <p class="hero-eyebrow">Sweets &amp; Snacks · Chandni Bagh, Panipat</p>
       <h1 class="hero-title">
-        Hot. Fresh.<br>
+        <span class="sr-only">Pakora Junction by Dawar, Panipat — </span>Hot. Fresh.<br>
         <span class="word-cycle" id="wordCycle">
           <span class="wc-item wc-pakora">Crispy Pakoras</span>
           <span class="wc-item wc-sweet">Pure-Ghee Sweets</span>
@@ -1031,9 +1068,9 @@ image-slot{ display:block; }
       <p class="section-desc">Real moments from our shop on Sanoli Road — the fry station, the sweets case, and snacks going out the door.</p>
     </div>
     <div class="gallery-grid">
-      <image-slot id="gal-1" src="images/pk-bread.jpg" shape="rounded" radius="18" placeholder="Fry station / counter photo"></image-slot>
-      <image-slot id="gal-2" src="images/sw-kalakand.jpg" shape="rounded" radius="18" placeholder="Sweets case photo"></image-slot>
-      <image-slot id="gal-3" src="images/sw-gulab.jpg" shape="rounded" radius="18" placeholder="Plate / shopfront photo"></image-slot>
+      <image-slot id="gal-1" src="images/pk-bread.jpg" shape="rounded" radius="18" placeholder="Fry station / counter photo" role="img" aria-label="Bread pakora served hot — Dawar Sweets Panipat"></image-slot>
+      <image-slot id="gal-2" src="images/sw-kalakand.jpg" shape="rounded" radius="18" placeholder="Sweets case photo" role="img" aria-label="Kalakand milk sweet — Dawar Sweets Panipat"></image-slot>
+      <image-slot id="gal-3" src="images/sw-gulab.jpg" shape="rounded" radius="18" placeholder="Plate / shopfront photo" role="img" aria-label="Gulab jamun — Dawar Sweets Panipat"></image-slot>
     </div>
   </section>
 
@@ -1047,7 +1084,7 @@ image-slot{ display:block; }
     <div class="pakora-grid">
       <article class="pakora-card" style="--delay:0">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-bread" src="images/pk-bread.jpg" shape="rounded" radius="10" placeholder="Bread pakora photo"></image-slot>
+          <image-slot id="pk-bread" src="images/pk-bread.jpg" shape="rounded" radius="10" placeholder="Bread pakora photo" role="img" aria-label="Bread pakora — stuffed with spiced potato, fried golden crispy"></image-slot>
           <span class="sizzle-tag">Bestseller</span>
         </div>
         <h3>Bread Pakora</h3>
@@ -1056,7 +1093,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:1">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-paneer-bread" src="images/pk-paneer-bread.jpg" shape="rounded" radius="10" placeholder="Paneer bread pakora photo"></image-slot>
+          <image-slot id="pk-paneer-bread" src="images/pk-paneer-bread.jpg" shape="rounded" radius="10" placeholder="Paneer bread pakora photo" role="img" aria-label="Paneer bread pakora — layered with paneer, fried crisp"></image-slot>
         </div>
         <h3>Paneer Bread Pakora</h3>
         <p class="pakora-desc">Bread layered with paneer, dipped in fresh gram flour batter, fried crisp and served hot.</p>
@@ -1064,7 +1101,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:2">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-paneer" src="images/pk-paneer.jpg" shape="rounded" radius="10" placeholder="Paneer pakora photo"></image-slot>
+          <image-slot id="pk-paneer" src="images/pk-paneer.jpg" shape="rounded" radius="10" placeholder="Paneer pakora photo" role="img" aria-label="Paneer pakora — soft paneer cubes in spiced gram flour batter"></image-slot>
         </div>
         <h3>Paneer Pakora</h3>
         <p class="pakora-desc">Soft paneer cubes, spiced batter, crisp coating.</p>
@@ -1072,7 +1109,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:3">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-mix" src="images/pk-mix.jpg" shape="rounded" radius="10" placeholder="Mix pakora photo"></image-slot>
+          <image-slot id="pk-mix" src="images/pk-mix.jpg" shape="rounded" radius="10" placeholder="Mix pakora photo" role="img" aria-label="Mix pakora — assorted pakoras fried together"></image-slot>
           <span class="sizzle-tag">Mix</span>
         </div>
         <h3>Mix Pakora</h3>
@@ -1081,7 +1118,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:4">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-chaap" src="images/pk-chaap.jpg" shape="rounded" radius="10" placeholder="Chaap pakora photo"></image-slot>
+          <image-slot id="pk-chaap" src="images/pk-chaap.jpg" shape="rounded" radius="10" placeholder="Chaap pakora photo" role="img" aria-label="Chaap pakora — soya chaap in spiced batter, fried hot"></image-slot>
         </div>
         <h3>Chaap Pakora</h3>
         <p class="pakora-desc">Soya chaap in spiced batter, fried hot and crisp.</p>
@@ -1089,7 +1126,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:5">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-mushroom" src="images/pk-mushroom.jpg" shape="rounded" radius="10" placeholder="Mushroom pakora photo"></image-slot>
+          <image-slot id="pk-mushroom" src="images/pk-mushroom.jpg" shape="rounded" radius="10" placeholder="Mushroom pakora photo" role="img" aria-label="Mushroom pakora — seasonal, fresh mushrooms in gram flour batter"></image-slot>
           <span class="sizzle-tag sizzle-seasonal">Seasonal</span>
         </div>
         <h3>Mushroom Pakora</h3>
@@ -1098,7 +1135,7 @@ image-slot{ display:block; }
 
       <article class="pakora-card" style="--delay:6">
         <div class="pakora-img-wrap">
-          <image-slot id="pk-bhish" src="images/pk-bhish.jpg" shape="rounded" radius="10" placeholder="Bhish pakora photo"></image-slot>
+          <image-slot id="pk-bhish" src="images/pk-bhish.jpg" shape="rounded" radius="10" placeholder="Bhish pakora photo" role="img" aria-label="Bhish pakora — lotus stem in gram flour batter, fried fresh"></image-slot>
         </div>
         <h3>Bhish Pakora</h3>
         <p class="pakora-desc">Lotus stem coated in gram flour batter, fried fresh to order.</p>
@@ -1116,37 +1153,37 @@ image-slot{ display:block; }
       <article class="sweet-card">
         <div class="sweet-card-img">
           <span class="sweet-tag">Bestseller · Low Sugar</span>
-          <image-slot id="sw-kalakand" src="images/sw-kalakand.jpg" shape="rect" placeholder="Kalakand photo"></image-slot>
+          <image-slot id="sw-kalakand" src="images/sw-kalakand.jpg" shape="rect" placeholder="Kalakand photo" role="img" aria-label="Kalakand — pure milk sweet, low sugar, Dawar Sweets Panipat"></image-slot>
         </div>
         <div class="sweet-card-body"><h3>Kalakand</h3><p>Soft milk cake, made with pure milk and less sugar.</p></div>
       </article>
       <article class="sweet-card">
         <div class="sweet-card-img">
-          <image-slot id="sw-gulab" src="images/sw-gulab.jpg" shape="rect" placeholder="Gulab jamun photo"></image-slot>
+          <image-slot id="sw-gulab" src="images/sw-gulab.jpg" shape="rect" placeholder="Gulab jamun photo" role="img" aria-label="Gulab jamun — warm, syrup-soaked, melt-in-the-mouth"></image-slot>
         </div>
         <div class="sweet-card-body"><h3>Gulab Jamun</h3><p>Warm, syrup-soaked and melt-in-the-mouth.</p></div>
       </article>
       <article class="sweet-card">
         <div class="sweet-card-img">
-          <image-slot id="sw-rasgulla" src="images/sw-rasgulla.jpg" shape="rect" placeholder="Rasgulla photo"></image-slot>
+          <image-slot id="sw-rasgulla" src="images/sw-rasgulla.jpg" shape="rect" placeholder="Rasgulla photo" role="img" aria-label="Rasgulla — spongy chenna balls in light sugar syrup"></image-slot>
         </div>
         <div class="sweet-card-body"><h3>Rasgulla</h3><p>Spongy chenna balls in light sugar syrup.</p></div>
       </article>
       <article class="sweet-card">
         <div class="sweet-card-img">
-          <image-slot id="sw-besan" src="images/sw-besan.jpg" shape="rect" placeholder="Besan laddoo photo"></image-slot>
+          <image-slot id="sw-besan" src="images/sw-besan.jpg" shape="rect" placeholder="Besan laddoo photo" role="img" aria-label="Besan laddoo — golden gram flour sweet with cardamom"></image-slot>
         </div>
         <div class="sweet-card-body"><h3>Besan Ke Laddoo</h3><p>Roasted gram flour and ghee, rolled by hand.</p></div>
       </article>
       <article class="sweet-card">
         <div class="sweet-card-img">
-          <image-slot id="sw-motichoor" src="images/sw-motichoor.jpg" shape="rect" placeholder="Motichoor laddoo photo"></image-slot>
+          <image-slot id="sw-motichoor" src="images/sw-motichoor.jpg" shape="rect" placeholder="Motichoor laddoo photo" role="img" aria-label="Motichoor laddoo — orange boondi laddoo with pistachio garnish"></image-slot>
         </div>
         <div class="sweet-card-body"><h3>Motichoor Laddoo</h3><p>Fine boondi pearls bound into soft, rich laddoos.</p></div>
       </article>
       <article class="sweet-card">
         <div class="sweet-card-img">
-          <image-slot id="sw-kaju" src="images/sw-kaju.jpg" shape="rect" placeholder="Kaju katli photo"></image-slot>
+          <image-slot id="sw-kaju" src="images/sw-kaju.jpg" shape="rect" placeholder="Kaju katli photo" role="img" aria-label="Kaju katli — diamond-cut cashew sweet with silver vark"></image-slot>
         </div>
         <div class="sweet-card-body"><h3>Kaju Katli</h3><p>Smooth cashew diamonds with a silver-leaf finish.</p></div>
       </article>
@@ -1157,7 +1194,7 @@ image-slot{ display:block; }
     <div class="ghewar-highlight">
       <div class="ghewar-media">
         <span class="ghewar-flag"><i data-icon="droplet"></i> Monsoon Special</span>
-        <image-slot id="sw-ghewar" src="images/sw-ghewar.jpg" shape="rect" placeholder="Ghewar photo"></image-slot>
+        <image-slot id="sw-ghewar" src="images/sw-ghewar.jpg" shape="rect" placeholder="Ghewar photo" role="img" aria-label="Ghewar — traditional Rajasthani sweet, Dawar Sweets Panipat"></image-slot>
       </div>
       <div class="ghewar-body">
         <p class="ghewar-eyebrow">Coming soon · with the rains</p>
@@ -1179,7 +1216,7 @@ image-slot{ display:block; }
       <p class="section-eyebrow">Light &amp; fresh</p>
       <h2 class="section-title small">Sandwich</h2>
       <div class="feature-item">
-        <image-slot id="sandwich" class="feature-img" src="images/sandwich.jpg" shape="rounded" radius="16" placeholder="Sandwich photo"></image-slot>
+        <image-slot id="sandwich" class="feature-img" src="images/sandwich.jpg" shape="rounded" radius="16" placeholder="Sandwich photo" role="img" aria-label="Veg club sandwich — fresh vegetables, toasted bread, served at Dawar Sweets Panipat"></image-slot>
         <div class="feature-info">
           <h3>Veg Club Sandwich</h3>
           <p>Layered fresh, served simple — the one sandwich we make, and we make it well.</p>
@@ -1217,7 +1254,7 @@ image-slot{ display:block; }
         <h3>Special boondi, every Tuesday</h3>
         <p>Fresh, melt-in-the-mouth boondi made specially on Tuesdays. Come early — it goes fast.</p>
         <span class="tuesday-chip"><i data-icon="clock"></i> Tuesdays only</span>
-        <image-slot id="sp-boondi" class="boondi-img" src="images/sp-boondi.jpg" shape="circle" placeholder="Boondi photo"></image-slot>
+        <image-slot id="sp-boondi" class="boondi-img" src="images/sp-boondi.jpg" shape="circle" placeholder="Boondi photo" role="img" aria-label="Boondi — crispy fried chickpea pearls, Tuesday special at Dawar Sweets"></image-slot>
       </div>
     </div>
   </section>
